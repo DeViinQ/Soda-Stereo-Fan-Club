@@ -1,0 +1,156 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Albums - Soda Stereo">
+  <main class="mt-24 px-4 md:px-24 mb-10">
+    <h1 class="text-center font-bold text-3xl mb-8">Álbumes de Soda Stereo</h1>
+
+    <!-- Top 5 Álbumes más escuchados -->
+    <section class="top-albums mb-12">
+      <h2 class="text-center font-semibold text-2xl mb-6">
+        Top 5 Álbumes Más Escuchados
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Álbum 1 -->
+        <div class="album flex flex-col items-center">
+          <img src="/Signos.jpg" alt="Signos" class="w-48 h-48 mb-4" />
+          <h3 class="text-lg font-semibold">Signos</h3>
+          <iframe
+            src="https://open.spotify.com/embed/album/7s2lDvm4FwnWE5RXEoY8Gi"
+            width="100%"
+            height="80"
+            frameborder="0"
+            allowtransparency="true"
+            allow="encrypted-media"></iframe>
+        </div>
+        <!-- Álbum 2 -->
+        <div class="album flex flex-col items-center">
+          <img
+            src="/Cancionanimal.jpg"
+            alt="Canción Animal"
+            class="w-48 h-48 mb-4"
+          />
+          <h3 class="text-lg font-semibold">Canción Animal</h3>
+          <iframe
+            src="https://open.spotify.com/embed/album/3GoSlKTNcVOp1ZxE5OOXeN"
+            width="100%"
+            height="80"
+            frameborder="0"
+            allowtransparency="true"
+            allow="encrypted-media"></iframe>
+        </div>
+        <!-- Álbum 3 -->
+        <div class="album flex flex-col items-center">
+          <img
+            src="/Sueñostereo.jpg"
+            alt="Sueño Stereo"
+            class="w-48 h-48 mb-4"
+          />
+          <h3 class="text-lg font-semibold">Sueño Stereo</h3>
+          <iframe
+            src="https://open.spotify.com/embed/album/1A3VRbn7Kto2ov0LkSY0eg"
+            width="100%"
+            height="80"
+            frameborder="0"
+            allowtransparency="true"
+            allow="encrypted-media"></iframe>
+        </div>
+        <!-- Álbum 4 -->
+        <div class="album flex flex-col items-center">
+          <img src="/Doblevida.jpg" alt="Doble Vida" class="w-48 h-48 mb-4" />
+          <h3 class="text-lg font-semibold">Doble Vida</h3>
+          <iframe
+            src="https://open.spotify.com/embed/album/0mEY1U7SZdIwDWylFm2UC4"
+            width="100%"
+            height="80"
+            frameborder="0"
+            allowtransparency="true"
+            allow="encrypted-media"></iframe>
+        </div>
+        <!-- Álbum 5 -->
+        <div class="album flex flex-col items-center">
+          <img src="/Dynamo.jpg" alt="Dynamo" class="w-48 h-48 mb-4" />
+          <h3 class="text-lg font-semibold">Dynamo</h3>
+          <iframe
+            src="https://open.spotify.com/embed/album/4bfwXuecOmNVlPM5RStAiQ"
+            width="100%"
+            height="80"
+            frameborder="0"
+            allowtransparency="true"
+            allow="encrypted-media"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Otros Álbumes -->
+    <section class="other-albums">
+      <h2 class="text-center font-semibold text-2xl mb-6">Otros Álbumes</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Álbum ejemplo -->
+        <div class="album flex flex-col items-center">
+          <img
+            src="/Sep7imodia.jpg"
+            alt="Álbum Ejemplo"
+            class="w-48 h-48 mb-4"
+          />
+          <h3 class="text-lg font-semibold">Sep7imo Dia</h3>
+          <iframe
+            src="https://open.spotify.com/embed/album/0HUncweJW3LTO0YOvOEX4a"
+            width="100%"
+            height="80"
+            frameborder="0"
+            allowtransparency="true"
+            allow="encrypted-media"></iframe>
+        </div>
+        <div class="album flex flex-col items-center">
+          <img src="/Meveras.jpg" alt="Álbum Ejemplo" class="w-48 h-48 mb-4" />
+          <h3 class="text-lg font-semibold">Gira Me Veras Volver</h3>
+          <iframe
+            src="https://open.spotify.com/embed/album/4Sy7VzDS4j1MLIYF85grsZ"
+            width="100%"
+            height="80"
+            frameborder="0"
+            allowtransparency="true"
+            allow="encrypted-media"></iframe>
+        </div>
+        <div class="album flex flex-col items-center">
+          <img
+            src="/Nadapersonal.jpg"
+            alt="Álbum Ejemplo"
+            class="w-48 h-48 mb-4"
+          />
+          <h3 class="text-lg font-semibold">Nada Personal</h3>
+          <iframe
+            src="https://open.spotify.com/embed/album/0hyq754QnaKHYpH32QnWqs"
+            width="100%"
+            height="80"
+            frameborder="0"
+            allowtransparency="true"
+            allow="encrypted-media"></iframe>
+        </div>
+        <!-- Añadir más álbumes aquí -->
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  body {
+    background-color: rgb(0, 80, 137);
+    color: rgb(255, 255, 255);
+  }
+
+  .album img {
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+
+  .album h3 {
+    margin-bottom: 0.5rem;
+  }
+
+  .grid {
+    gap: 2rem;
+  }
+</style>

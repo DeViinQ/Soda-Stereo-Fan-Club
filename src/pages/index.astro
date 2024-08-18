@@ -5,43 +5,70 @@ import TwitterIcon from "../components/Icons/Twitter.astro";
 import Characters from "../components/Characters.astro";
 ---
 
-<Layout title="Soda Stereo Fan-Club">
+<Layout title="Inicio - Soda Stereo ">
   <main>
-    <div class="main flex items-center justify-center">
+    <div class="main flex items-center justify-center min-h-screen">
       <div
-        class="content flex flex-col h-24 py-8 md:py-64 px-2 md:px-16 items-center text-center justify-center bg-white bg-opacity-20 border-white border-2 backdrop-blur-lg rounded-2xl shadow-lg mx-4 md:mx-0"
+        class="content flex flex-col h-auto py-8 md:py-24 px-4 md:px-16 items-center text-center justify-center bg-white bg-opacity-20 border-white border-2 backdrop-blur-lg rounded-2xl shadow-lg mx-4 md:mx-0"
       >
         <h1 class="text-white text-4xl md:text-6xl font-bold text-center">
-          Soda Stereo Fan Club
+          Soda Stereo
         </h1>
         <div class="line my-3 md:my-6"></div>
-        <span class="text-white text-2xl md:text-4xl font-bold text-center"
-          >La banda N°1 De la Argentina.</span
+        <span class="text-white text-2xl md:text-4xl font-bold text-center">
+          La banda N°1 De la Argentina.
+        </span>
+        <div
+          class="btns-social mt-8 flex flex-col md:flex-row gap-4 justify-center"
         >
-        <div class="btns-social mt-8 justify-between">
           <button
             type="button"
-            class="py-2.5 px-5 me-2 mb-2 text-sm transition-all duration-200 font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
-            ><a
+            class="py-2.5 px-5 text-sm transition-all duration-200 font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+          >
+            <a
               class="flex items-center text-white"
               href="https://www.instagram.com/sodastereo/"
               target="_blank"
-              ><span class="mr-1"><InstagramIcon /></span> Instagram</a
             >
+              <span class="mr-1"><InstagramIcon /></span> Instagram
+            </a>
           </button>
           <button
             type="button"
-            class="py-2.5 px-5 me-2 mb-2 text-sm font-medium transition-all duration-200 text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
-            ><a
+            class="py-2.5 px-5 text-sm font-medium transition-all duration-200 text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+          >
+            <a
               class="flex items-center text-white"
               href="https://x.com/sodastereo?lang=es"
               target="_blank"
-              ><span class="mr-1"><TwitterIcon /></span> Twitter/X</a
             >
+              <span class="mr-1"><TwitterIcon /></span> Twitter/X
+            </a>
           </button>
         </div>
       </div>
     </div>
+
+    <style>
+      .main {
+        min-height: 100vh;
+      }
+
+      .content {
+        max-width: 600px;
+      }
+
+      .btns-social button a {
+        color: inherit;
+      }
+
+      .line {
+        height: 2px;
+        width: 50%;
+        background-color: white;
+      }
+    </style>
+
     <div class="my-24">
       <div class="text-center items-center justify-center">
         <h2 class="font-bold text-4xl mb-8">Soda Stereo</h2>
