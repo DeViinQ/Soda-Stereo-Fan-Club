@@ -1,6 +1,32 @@
-<footer class="bg-black text-white py-4">
-  <span class="ml-12"
-    >&copy; Todos los derechos reservados a Soda Stereo. Producido con ❤ por
-    DevinQ</span
+---
+import InstagramIcon from "./Icons/Instagram.astro";
+import Twitter from "./Icons/Twitter.astro";
+import TwitterIcon from "./Icons/Twitter.astro";
+---
+
+<footer class="bg-black text-white py-4 mt-12">
+  <div
+    class="container mx-auto flex flex-col md:flex-row justify-between items-center px-4 md:px-12"
   >
+    <span class="text-center md:text-left"
+      >&copy; Todos los derechos reservados a Soda Stereo. Producido con ❤ por
+      Ciro</span
+    >
+    <div class="mt-4 md:mt-0">
+      <a
+        href="https://www.instagram.com/sodastereo/"
+        target="_blank"
+        class="mr-4 hover:text-yellow-300 transition-all duration-200"
+      >
+        <InstagramIcon />
+      </a>
+      <a
+        href="https://x.com/sodastereo?lang=es"
+        target="_blank"
+        class="hover:text-yellow-300 transition-all duration-200"
+      >
+        <TwitterIcon />
+      </a>
+    </div>
+  </div>
 </footer>
